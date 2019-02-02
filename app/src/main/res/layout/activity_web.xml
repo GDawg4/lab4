@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProjectsActivity">
+    tools:context=".WebActivity">
 
-    <ListView
-        android:id="@+id/projectsList"
+    <WebView
+        android:id="@+id/webView"
         android:layout_width="368dp"
         android:layout_height="551dp"
         android:layout_marginBottom="8dp"

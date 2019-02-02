@@ -9,4 +9,5 @@
     <string name="start">Start</string>
     <string name="projects">Projects</string>
     <string name="direction">Dirección</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

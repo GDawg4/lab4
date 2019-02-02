@@ -20,8 +20,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
+        /**
+         * Acción dummy
+         */
         fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+            Snackbar.make(view, "Acción no disponible, debido a bajo presupuesto", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
         }
 
@@ -57,6 +60,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
     }
 
+    /**
+     * Muestra cómo manejar cada opción del Navigation Drawer
+     */
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         // Handle navigation view item clicks here.
         when (item.itemId) {
@@ -67,7 +73,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 startActivity(Intent(this, ProjectsActivity::class.java))
             }
             R.id.direction -> {
-
+                startActivity(Intent(this, MapsActivity::class.java))
             }
         }
 
